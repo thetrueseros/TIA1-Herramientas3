@@ -37,9 +37,10 @@
             // 
             // btnIngresar
             // 
-            btnIngresar.Location = new Point(148, 166);
+            btnIngresar.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            btnIngresar.Location = new Point(162, 174);
             btnIngresar.Name = "btnIngresar";
-            btnIngresar.Size = new Size(132, 30);
+            btnIngresar.Size = new Size(132, 34);
             btnIngresar.TabIndex = 0;
             btnIngresar.Text = "Ingresar";
             btnIngresar.UseVisualStyleBackColor = true;
@@ -81,12 +82,13 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(462, 339);
+            ClientSize = new Size(462, 267);
             Controls.Add(txtContraseña);
             Controls.Add(txtUsuario);
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(btnIngresar);
+            FormBorderStyle = FormBorderStyle.Fixed3D;
             Name = "frmLogin";
             Text = "frmLogin";
             ResumeLayout(false);
