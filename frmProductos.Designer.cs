@@ -74,7 +74,6 @@
             txtNombreProducto.Name = "txtNombreProducto";
             txtNombreProducto.Size = new Size(100, 23);
             txtNombreProducto.TabIndex = 2;
-            txtNombreProducto.TextChanged += this.textBox1_TextChanged;
             // 
             // txtCodigoReferencia
             // 
@@ -82,7 +81,6 @@
             txtCodigoReferencia.Name = "txtCodigoReferencia";
             txtCodigoReferencia.Size = new Size(100, 23);
             txtCodigoReferencia.TabIndex = 4;
-            txtCodigoReferencia.TextChanged += this.textBox2_TextChanged;
             // 
             // lblCodigoReferencia
             // 
@@ -99,7 +97,6 @@
             txtPrecioVenta.Name = "txtPrecioVenta";
             txtPrecioVenta.Size = new Size(100, 23);
             txtPrecioVenta.TabIndex = 8;
-            txtPrecioVenta.TextChanged += this.textBox3_TextChanged;
             // 
             // lblPrecioVenta
             // 
@@ -116,7 +113,6 @@
             txtPrecioCompra.Name = "txtPrecioCompra";
             txtPrecioCompra.Size = new Size(100, 23);
             txtPrecioCompra.TabIndex = 6;
-            txtPrecioCompra.TextChanged += this.textBox4_TextChanged;
             // 
             // lblPreciocompra
             // 
@@ -151,7 +147,6 @@
             textBox6.Name = "textBox6";
             textBox6.Size = new Size(100, 23);
             textBox6.TabIndex = 10;
-            textBox6.TextChanged += this.textBox6_TextChanged;
             // 
             // lblCantidadStock
             // 
@@ -239,7 +234,6 @@
             Controls.Add(lblAdministracionProductos);
             Name = "frmProductos";
             Text = "Productos";
-            Load += this.frmProductos_Load;
             ResumeLayout(false);
             PerformLayout();
         }
