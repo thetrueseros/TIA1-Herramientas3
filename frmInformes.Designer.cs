@@ -205,7 +205,7 @@
             Controls.Add(lblSeleccioneInforme);
             Controls.Add(lblGenInformesFacturacion);
             Name = "frmInformes";
-            Text = "frmInformes";
+            Text = "Generador de Informes";
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
             PerformLayout();
