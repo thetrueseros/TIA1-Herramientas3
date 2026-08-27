@@ -6,18 +6,22 @@ namespace TIA1
         {
             InitializeComponent();
         }
+
         private void frmPrincipal_FormClosing(object sender, FormClosingEventArgs e)
         {
-            // Mostrar mensaje de confirmación
-            DialogResult resultado = MessageBox.Show("¿Seguro que deseas salir?", "Confirmar", MessageBoxButtons.YesNo);
+            DialogResult resultado = MessageBox.Show(
+                "¿Está seguro de que desea salir?",
+                "Confirmar salida",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question);
 
+            // Si el usuario elige "No", cancelamos el cierre
             if (resultado == DialogResult.No)
             {
-                e.Cancel = true; // Cancela el cierre del formulario
+                e.Cancel = true;
             }
+
         }
-
-
 
         private void AbrirFormularioEnPanel(Form formularioHijo)
         {
@@ -40,11 +44,6 @@ namespace TIA1
             this.panelContenedor.Controls.Add(formularioHijo);
             this.panelContenedor.Tag = formularioHijo;
             formularioHijo.Show();
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
         }
         private void tablasToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -129,6 +128,11 @@ namespace TIA1
             frmAdminSeguridad seguridad = new frmAdminSeguridad();
             seguridad.MdiParent = this;
             AbrirFormularioEnPanel(seguridad);
+        }
+
+        private void frmPrincipal_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

@@ -83,7 +83,6 @@
             txtDocumento.Name = "txtDocumento";
             txtDocumento.Size = new Size(176, 23);
             txtDocumento.TabIndex = 4;
-            txtDocumento.TextChanged += textBox2_TextChanged;
             // 
             // lblDocumento
             // 
@@ -227,6 +226,7 @@
             btnSalir.TabIndex = 20;
             btnSalir.Text = "Salir";
             btnSalir.UseVisualStyleBackColor = true;
+            btnSalir.Click += btnSalir_Click;
             // 
             // frmEmpleados
             // 

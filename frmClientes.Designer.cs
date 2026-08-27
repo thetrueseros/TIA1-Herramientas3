@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             lblNuevoRegistroClientes = new Label();
             lblNombreCliente = new Label();
             txtNombreCliente = new TextBox();
@@ -41,6 +42,8 @@
             btnSalir = new Button();
             btnActualizar = new Button();
             lblEmail = new Label();
+            errorProvider1 = new ErrorProvider(components);
+            ((System.ComponentModel.ISupportInitialize)errorProvider1).BeginInit();
             SuspendLayout();
             // 
             // lblNuevoRegistroClientes
@@ -77,7 +80,6 @@
             txtDocumento.Name = "txtDocumento";
             txtDocumento.Size = new Size(253, 23);
             txtDocumento.TabIndex = 4;
-            txtDocumento.TextChanged += textBox1_TextChanged;
             // 
             // lblDocumento
             // 
@@ -135,6 +137,7 @@
             btnSalir.TabIndex = 11;
             btnSalir.Text = "Salir";
             btnSalir.UseVisualStyleBackColor = true;
+            btnSalir.Click += btnSalir_Click;
             // 
             // btnActualizar
             // 
@@ -153,6 +156,10 @@
             lblEmail.Size = new Size(36, 15);
             lblEmail.TabIndex = 9;
             lblEmail.Text = "Email";
+            // 
+            // errorProvider1
+            // 
+            errorProvider1.ContainerControl = this;
             // 
             // frmClientes
             // 
@@ -174,6 +181,7 @@
             Controls.Add(lblNuevoRegistroClientes);
             Name = "frmClientes";
             Text = "Nuevo Registro de Cliente";
+            ((System.ComponentModel.ISupportInitialize)errorProvider1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -193,5 +201,6 @@
         private Button btnSalir;
         private Button btnActualizar;
         private Label lblEmail;
+        private ErrorProvider errorProvider1;
     }
 }

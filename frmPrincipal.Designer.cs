@@ -193,7 +193,8 @@
             Name = "frmPrincipal";
             Text = "Principal";
             WindowState = FormWindowState.Maximized;
-            Load += Form1_Load;
+            FormClosing += frmPrincipal_FormClosing;
+            FormClosed += frmPrincipal_FormClosed;
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
             ResumeLayout(false);

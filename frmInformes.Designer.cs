@@ -134,7 +134,6 @@
             rbEnPantalla.TabStop = true;
             rbEnPantalla.Text = "En pantalla";
             rbEnPantalla.UseVisualStyleBackColor = true;
-            rbEnPantalla.CheckedChanged += radioButton1_CheckedChanged;
             // 
             // rbPDF
             // 
@@ -175,6 +174,7 @@
             btnSalir.TabIndex = 13;
             btnSalir.Text = "Salir";
             btnSalir.UseVisualStyleBackColor = true;
+            btnSalir.Click += btnSalir_Click;
             // 
             // dataGridView1
             // 

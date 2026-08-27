@@ -130,7 +130,6 @@
             txtDetallesProducto.Name = "txtDetallesProducto";
             txtDetallesProducto.Size = new Size(225, 50);
             txtDetallesProducto.TabIndex = 12;
-            txtDetallesProducto.TextChanged += textBox5_TextChanged;
             // 
             // lblDetallesProducto
             // 
@@ -207,6 +206,7 @@
             btnSalir.TabIndex = 19;
             btnSalir.Text = "Salir";
             btnSalir.UseVisualStyleBackColor = true;
+            btnSalir.Click += btnSalir_Click;
             // 
             // frmProductos
             // 

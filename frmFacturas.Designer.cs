@@ -101,7 +101,6 @@
             cmbEmpleado.Name = "cmbEmpleado";
             cmbEmpleado.Size = new Size(121, 23);
             cmbEmpleado.TabIndex = 6;
-            cmbEmpleado.SelectedIndexChanged += cmbEmpleado_SelectedIndexChanged;
             // 
             // lblEmpleado
             // 
@@ -228,6 +227,7 @@
             btnSalir.TabIndex = 20;
             btnSalir.Text = "Salir";
             btnSalir.UseVisualStyleBackColor = true;
+            btnSalir.Click += btnSalir_Click;
             // 
             // frmFacturas
             // 
