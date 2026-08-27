@@ -51,134 +51,173 @@
             // 
             // menuStrip1
             // 
+            menuStrip1.BackColor = Color.FromArgb(0, 0, 32);
             menuStrip1.Items.AddRange(new ToolStripItem[] { archivoToolStripMenuItem, tablasToolStripMenuItem, facturaciónToolStripMenuItem, seguridadToolStripMenuItem, ayudaToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(800, 24);
+            menuStrip1.Size = new Size(800, 28);
             menuStrip1.TabIndex = 1;
             menuStrip1.Text = "menuStrip1";
             // 
             // archivoToolStripMenuItem
             // 
+            archivoToolStripMenuItem.BackColor = Color.FromArgb(10, 10, 32);
             archivoToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { salirToolStripMenuItem });
+            archivoToolStripMenuItem.Font = new Font("Segoe UI", 11F);
+            archivoToolStripMenuItem.ForeColor = Color.White;
             archivoToolStripMenuItem.Name = "archivoToolStripMenuItem";
-            archivoToolStripMenuItem.Size = new Size(60, 20);
+            archivoToolStripMenuItem.Size = new Size(71, 24);
             archivoToolStripMenuItem.Text = "Archivo";
             archivoToolStripMenuItem.Click += archivoToolStripMenuItem_Click;
             // 
             // salirToolStripMenuItem
             // 
+            salirToolStripMenuItem.BackColor = Color.FromArgb(10, 10, 32);
+            salirToolStripMenuItem.ForeColor = Color.White;
             salirToolStripMenuItem.Name = "salirToolStripMenuItem";
-            salirToolStripMenuItem.Size = new Size(96, 22);
+            salirToolStripMenuItem.Size = new Size(180, 24);
             salirToolStripMenuItem.Text = "Salir";
             salirToolStripMenuItem.Click += salirToolStripMenuItem_Click;
             // 
             // tablasToolStripMenuItem
             // 
+            tablasToolStripMenuItem.BackColor = Color.FromArgb(10, 10, 32);
             tablasToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { formularioClientesToolStripMenuItem, formularioProductosToolStripMenuItem, formularioCategoriasToolStripMenuItem });
+            tablasToolStripMenuItem.Font = new Font("Segoe UI", 11F);
+            tablasToolStripMenuItem.ForeColor = Color.White;
             tablasToolStripMenuItem.Name = "tablasToolStripMenuItem";
-            tablasToolStripMenuItem.Size = new Size(52, 20);
+            tablasToolStripMenuItem.Size = new Size(62, 24);
             tablasToolStripMenuItem.Text = "Tablas";
             tablasToolStripMenuItem.Click += tablasToolStripMenuItem_Click;
             // 
             // formularioClientesToolStripMenuItem
             // 
+            formularioClientesToolStripMenuItem.BackColor = Color.FromArgb(10, 10, 32);
+            formularioClientesToolStripMenuItem.ForeColor = Color.White;
             formularioClientesToolStripMenuItem.Name = "formularioClientesToolStripMenuItem";
-            formularioClientesToolStripMenuItem.Size = new Size(130, 22);
+            formularioClientesToolStripMenuItem.Size = new Size(180, 24);
             formularioClientesToolStripMenuItem.Text = "Clientes";
             formularioClientesToolStripMenuItem.Click += formularioClientesToolStripMenuItem_Click;
             // 
             // formularioProductosToolStripMenuItem
             // 
+            formularioProductosToolStripMenuItem.BackColor = Color.FromArgb(10, 10, 32);
+            formularioProductosToolStripMenuItem.ForeColor = Color.White;
             formularioProductosToolStripMenuItem.Name = "formularioProductosToolStripMenuItem";
-            formularioProductosToolStripMenuItem.Size = new Size(130, 22);
+            formularioProductosToolStripMenuItem.Size = new Size(180, 24);
             formularioProductosToolStripMenuItem.Text = "Productos";
             formularioProductosToolStripMenuItem.Click += formularioProductosToolStripMenuItem_Click;
             // 
             // formularioCategoriasToolStripMenuItem
             // 
+            formularioCategoriasToolStripMenuItem.BackColor = Color.FromArgb(10, 10, 32);
+            formularioCategoriasToolStripMenuItem.ForeColor = Color.White;
             formularioCategoriasToolStripMenuItem.Name = "formularioCategoriasToolStripMenuItem";
-            formularioCategoriasToolStripMenuItem.Size = new Size(130, 22);
+            formularioCategoriasToolStripMenuItem.Size = new Size(180, 24);
             formularioCategoriasToolStripMenuItem.Text = "Categorias";
             formularioCategoriasToolStripMenuItem.Click += formularioCategoriasToolStripMenuItem_Click;
             // 
             // facturaciónToolStripMenuItem
             // 
+            facturaciónToolStripMenuItem.BackColor = Color.FromArgb(10, 10, 32);
             facturaciónToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { formularioFacturasToolStripMenuItem, formularioInformesToolStripMenuItem });
+            facturaciónToolStripMenuItem.Font = new Font("Segoe UI", 11F);
+            facturaciónToolStripMenuItem.ForeColor = Color.White;
             facturaciónToolStripMenuItem.Name = "facturaciónToolStripMenuItem";
-            facturaciónToolStripMenuItem.Size = new Size(81, 20);
+            facturaciónToolStripMenuItem.Size = new Size(96, 24);
             facturaciónToolStripMenuItem.Text = "Facturación";
             // 
             // formularioFacturasToolStripMenuItem
             // 
+            formularioFacturasToolStripMenuItem.BackColor = Color.FromArgb(10, 10, 32);
+            formularioFacturasToolStripMenuItem.ForeColor = Color.White;
             formularioFacturasToolStripMenuItem.Name = "formularioFacturasToolStripMenuItem";
-            formularioFacturasToolStripMenuItem.Size = new Size(121, 22);
+            formularioFacturasToolStripMenuItem.Size = new Size(180, 24);
             formularioFacturasToolStripMenuItem.Text = "Facturas";
             formularioFacturasToolStripMenuItem.Click += formularioFacturasToolStripMenuItem_Click;
             // 
             // formularioInformesToolStripMenuItem
             // 
+            formularioInformesToolStripMenuItem.BackColor = Color.FromArgb(10, 10, 32);
+            formularioInformesToolStripMenuItem.ForeColor = Color.White;
             formularioInformesToolStripMenuItem.Name = "formularioInformesToolStripMenuItem";
-            formularioInformesToolStripMenuItem.Size = new Size(121, 22);
+            formularioInformesToolStripMenuItem.Size = new Size(180, 24);
             formularioInformesToolStripMenuItem.Text = "Informes";
             formularioInformesToolStripMenuItem.Click += formularioInformesToolStripMenuItem_Click;
             // 
             // seguridadToolStripMenuItem
             // 
+            seguridadToolStripMenuItem.BackColor = Color.FromArgb(10, 10, 32);
             seguridadToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { formularioEmpleadosToolStripMenuItem, formularioRolesToolStripMenuItem, formularioSeguridadToolStripMenuItem });
+            seguridadToolStripMenuItem.Font = new Font("Segoe UI", 11F);
+            seguridadToolStripMenuItem.ForeColor = Color.White;
             seguridadToolStripMenuItem.Name = "seguridadToolStripMenuItem";
-            seguridadToolStripMenuItem.Size = new Size(72, 20);
+            seguridadToolStripMenuItem.Size = new Size(89, 24);
             seguridadToolStripMenuItem.Text = "Seguridad";
             // 
             // formularioEmpleadosToolStripMenuItem
             // 
+            formularioEmpleadosToolStripMenuItem.BackColor = Color.FromArgb(10, 10, 32);
+            formularioEmpleadosToolStripMenuItem.ForeColor = Color.White;
             formularioEmpleadosToolStripMenuItem.Name = "formularioEmpleadosToolStripMenuItem";
-            formularioEmpleadosToolStripMenuItem.Size = new Size(132, 22);
+            formularioEmpleadosToolStripMenuItem.Size = new Size(180, 24);
             formularioEmpleadosToolStripMenuItem.Text = "Empleados";
             formularioEmpleadosToolStripMenuItem.Click += formularioEmpleadosToolStripMenuItem_Click;
             // 
             // formularioRolesToolStripMenuItem
             // 
+            formularioRolesToolStripMenuItem.BackColor = Color.FromArgb(10, 10, 32);
+            formularioRolesToolStripMenuItem.ForeColor = Color.White;
             formularioRolesToolStripMenuItem.Name = "formularioRolesToolStripMenuItem";
-            formularioRolesToolStripMenuItem.Size = new Size(132, 22);
+            formularioRolesToolStripMenuItem.Size = new Size(180, 24);
             formularioRolesToolStripMenuItem.Text = "Roles";
             formularioRolesToolStripMenuItem.Click += formularioRolesToolStripMenuItem_Click;
             // 
             // formularioSeguridadToolStripMenuItem
             // 
+            formularioSeguridadToolStripMenuItem.BackColor = Color.FromArgb(10, 10, 32);
+            formularioSeguridadToolStripMenuItem.ForeColor = Color.White;
             formularioSeguridadToolStripMenuItem.Name = "formularioSeguridadToolStripMenuItem";
-            formularioSeguridadToolStripMenuItem.Size = new Size(132, 22);
+            formularioSeguridadToolStripMenuItem.Size = new Size(180, 24);
             formularioSeguridadToolStripMenuItem.Text = "Seguridad";
             formularioSeguridadToolStripMenuItem.Click += formularioSeguridadToolStripMenuItem_Click;
             // 
             // ayudaToolStripMenuItem
             // 
+            ayudaToolStripMenuItem.BackColor = Color.FromArgb(10, 10, 32);
             ayudaToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { ayudaToolStripMenuItem1, acercaDeToolStripMenuItem });
+            ayudaToolStripMenuItem.Font = new Font("Segoe UI", 11F);
+            ayudaToolStripMenuItem.ForeColor = Color.White;
             ayudaToolStripMenuItem.Name = "ayudaToolStripMenuItem";
-            ayudaToolStripMenuItem.Size = new Size(53, 20);
+            ayudaToolStripMenuItem.Size = new Size(63, 24);
             ayudaToolStripMenuItem.Text = "Ayuda";
             // 
             // ayudaToolStripMenuItem1
             // 
+            ayudaToolStripMenuItem1.BackColor = Color.FromArgb(10, 10, 32);
+            ayudaToolStripMenuItem1.ForeColor = Color.White;
             ayudaToolStripMenuItem1.Name = "ayudaToolStripMenuItem1";
-            ayudaToolStripMenuItem1.Size = new Size(126, 22);
+            ayudaToolStripMenuItem1.Size = new Size(180, 24);
             ayudaToolStripMenuItem1.Text = "Ayuda";
             ayudaToolStripMenuItem1.Click += ayudaToolStripMenuItem1_Click;
             // 
             // acercaDeToolStripMenuItem
             // 
+            acercaDeToolStripMenuItem.BackColor = Color.FromArgb(10, 10, 32);
+            acercaDeToolStripMenuItem.ForeColor = Color.White;
             acercaDeToolStripMenuItem.Name = "acercaDeToolStripMenuItem";
-            acercaDeToolStripMenuItem.Size = new Size(126, 22);
+            acercaDeToolStripMenuItem.Size = new Size(180, 24);
             acercaDeToolStripMenuItem.Text = "Acerca de";
             acercaDeToolStripMenuItem.Click += acercaDeToolStripMenuItem_Click;
             // 
             // panelContenedor
             // 
             panelContenedor.AutoSize = true;
+            panelContenedor.BackColor = Color.FromArgb(0, 0, 64);
             panelContenedor.Dock = DockStyle.Fill;
-            panelContenedor.Location = new Point(0, 24);
+            panelContenedor.Location = new Point(0, 28);
             panelContenedor.Name = "panelContenedor";
-            panelContenedor.Size = new Size(800, 426);
+            panelContenedor.Size = new Size(800, 422);
             panelContenedor.TabIndex = 3;
             // 
             // frmPrincipal

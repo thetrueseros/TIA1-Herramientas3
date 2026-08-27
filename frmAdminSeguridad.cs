@@ -24,5 +24,31 @@ namespace TIA1
                 this.Dispose();
             }
         }
+
+        private void btnActualizar_Click(object sender, EventArgs e)
+        {
+            // usuario vacío
+            if (string.IsNullOrEmpty(txtUsuario.Text))
+            {
+                errorProvider1.SetError(txtUsuario, "El campo de usuario es obligatorio.");
+                return;
+            }
+            else
+            {
+                errorProvider1.SetError(txtUsuario, "");
+            }
+
+            //contraseña vacía
+
+            if (string.IsNullOrEmpty(txtContrasena.Text))
+            {
+                errorProvider1.SetError(txtContrasena, "El campo de contraseña es obligatorio.");
+                return;
+            }
+            else
+            {
+                errorProvider1.SetError(txtContrasena, "");
+            }
+        }
     }
 }

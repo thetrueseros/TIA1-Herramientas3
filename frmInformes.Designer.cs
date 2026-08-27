@@ -49,26 +49,29 @@
             // lblGenInformesFacturacion
             // 
             lblGenInformesFacturacion.AutoSize = true;
-            lblGenInformesFacturacion.Font = new Font("Segoe UI", 24F);
-            lblGenInformesFacturacion.Location = new Point(36, 22);
+            lblGenInformesFacturacion.Font = new Font("Segoe UI", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblGenInformesFacturacion.ForeColor = Color.White;
+            lblGenInformesFacturacion.Location = new Point(15, 21);
             lblGenInformesFacturacion.Name = "lblGenInformesFacturacion";
-            lblGenInformesFacturacion.Size = new Size(678, 45);
+            lblGenInformesFacturacion.Size = new Size(719, 45);
             lblGenInformesFacturacion.TabIndex = 0;
             lblGenInformesFacturacion.Text = "GENERADOR DE INFORMES DE FACTURACIÓN";
             // 
             // lblSeleccioneInforme
             // 
             lblSeleccioneInforme.AutoSize = true;
+            lblSeleccioneInforme.Font = new Font("Segoe UI", 11F);
+            lblSeleccioneInforme.ForeColor = Color.White;
             lblSeleccioneInforme.Location = new Point(53, 101);
             lblSeleccioneInforme.Name = "lblSeleccioneInforme";
-            lblSeleccioneInforme.Size = new Size(120, 15);
+            lblSeleccioneInforme.Size = new Size(152, 20);
             lblSeleccioneInforme.TabIndex = 1;
             lblSeleccioneInforme.Text = "Seleccione el Informe";
             // 
             // cmbSeleccioneInforme
             // 
             cmbSeleccioneInforme.FormattingEnabled = true;
-            cmbSeleccioneInforme.Location = new Point(186, 98);
+            cmbSeleccioneInforme.Location = new Point(211, 98);
             cmbSeleccioneInforme.Name = "cmbSeleccioneInforme";
             cmbSeleccioneInforme.Size = new Size(121, 23);
             cmbSeleccioneInforme.TabIndex = 2;
@@ -76,16 +79,18 @@
             // lblOrdenarPor
             // 
             lblOrdenarPor.AutoSize = true;
+            lblOrdenarPor.Font = new Font("Segoe UI", 11F);
+            lblOrdenarPor.ForeColor = Color.White;
             lblOrdenarPor.Location = new Point(355, 101);
             lblOrdenarPor.Name = "lblOrdenarPor";
-            lblOrdenarPor.Size = new Size(74, 15);
+            lblOrdenarPor.Size = new Size(93, 20);
             lblOrdenarPor.TabIndex = 3;
             lblOrdenarPor.Text = "Ordenar por:";
             // 
             // cmbOrdenarPor
             // 
             cmbOrdenarPor.FormattingEnabled = true;
-            cmbOrdenarPor.Location = new Point(436, 98);
+            cmbOrdenarPor.Location = new Point(454, 98);
             cmbOrdenarPor.Name = "cmbOrdenarPor";
             cmbOrdenarPor.Size = new Size(121, 23);
             cmbOrdenarPor.TabIndex = 4;
@@ -93,16 +98,18 @@
             // lblFechaInicio
             // 
             lblFechaInicio.AutoSize = true;
+            lblFechaInicio.Font = new Font("Segoe UI", 11F);
+            lblFechaInicio.ForeColor = Color.White;
             lblFechaInicio.Location = new Point(53, 142);
             lblFechaInicio.Name = "lblFechaInicio";
-            lblFechaInicio.Size = new Size(70, 15);
+            lblFechaInicio.Size = new Size(87, 20);
             lblFechaInicio.TabIndex = 5;
             lblFechaInicio.Text = "Fecha Inicio";
             // 
             // dtpFechaInicio
             // 
             dtpFechaInicio.Format = DateTimePickerFormat.Short;
-            dtpFechaInicio.Location = new Point(186, 134);
+            dtpFechaInicio.Location = new Point(211, 134);
             dtpFechaInicio.Name = "dtpFechaInicio";
             dtpFechaInicio.Size = new Size(121, 23);
             dtpFechaInicio.TabIndex = 6;
@@ -110,7 +117,7 @@
             // dtpFechaFinal
             // 
             dtpFechaFinal.Format = DateTimePickerFormat.Short;
-            dtpFechaFinal.Location = new Point(436, 136);
+            dtpFechaFinal.Location = new Point(454, 136);
             dtpFechaFinal.Name = "dtpFechaFinal";
             dtpFechaFinal.Size = new Size(121, 23);
             dtpFechaFinal.TabIndex = 8;
@@ -118,18 +125,21 @@
             // lblFechaFinal
             // 
             lblFechaFinal.AutoSize = true;
+            lblFechaFinal.Font = new Font("Segoe UI", 11F);
+            lblFechaFinal.ForeColor = Color.White;
             lblFechaFinal.Location = new Point(355, 140);
             lblFechaFinal.Name = "lblFechaFinal";
-            lblFechaFinal.Size = new Size(66, 15);
+            lblFechaFinal.Size = new Size(82, 20);
             lblFechaFinal.TabIndex = 7;
             lblFechaFinal.Text = "Fecha Final";
             // 
             // rbEnPantalla
             // 
             rbEnPantalla.AutoSize = true;
+            rbEnPantalla.Font = new Font("Segoe UI", 11F);
             rbEnPantalla.Location = new Point(214, 203);
             rbEnPantalla.Name = "rbEnPantalla";
-            rbEnPantalla.Size = new Size(83, 19);
+            rbEnPantalla.Size = new Size(101, 24);
             rbEnPantalla.TabIndex = 9;
             rbEnPantalla.TabStop = true;
             rbEnPantalla.Text = "En pantalla";
@@ -138,9 +148,10 @@
             // rbPDF
             // 
             rbPDF.AutoSize = true;
-            rbPDF.Location = new Point(316, 203);
+            rbPDF.Font = new Font("Segoe UI", 11F);
+            rbPDF.Location = new Point(321, 203);
             rbPDF.Name = "rbPDF";
-            rbPDF.Size = new Size(46, 19);
+            rbPDF.Size = new Size(53, 24);
             rbPDF.TabIndex = 10;
             rbPDF.TabStop = true;
             rbPDF.Text = "PDF";
@@ -149,9 +160,10 @@
             // rbExcel
             // 
             rbExcel.AutoSize = true;
+            rbExcel.Font = new Font("Segoe UI", 11F);
             rbExcel.Location = new Point(386, 203);
             rbExcel.Name = "rbExcel";
-            rbExcel.Size = new Size(51, 19);
+            rbExcel.Size = new Size(61, 24);
             rbExcel.TabIndex = 11;
             rbExcel.TabStop = true;
             rbExcel.Text = "Excel";
@@ -159,21 +171,29 @@
             // 
             // btnGenerarInforme
             // 
+            btnGenerarInforme.BackColor = SystemColors.Highlight;
+            btnGenerarInforme.FlatStyle = FlatStyle.Flat;
+            btnGenerarInforme.Font = new Font("Segoe UI", 11F);
+            btnGenerarInforme.ForeColor = Color.White;
             btnGenerarInforme.Location = new Point(184, 250);
             btnGenerarInforme.Name = "btnGenerarInforme";
-            btnGenerarInforme.Size = new Size(140, 23);
+            btnGenerarInforme.Size = new Size(159, 32);
             btnGenerarInforme.TabIndex = 12;
             btnGenerarInforme.Text = "GENERAR INFORME";
-            btnGenerarInforme.UseVisualStyleBackColor = true;
+            btnGenerarInforme.UseVisualStyleBackColor = false;
             // 
             // btnSalir
             // 
-            btnSalir.Location = new Point(395, 254);
+            btnSalir.BackColor = SystemColors.Highlight;
+            btnSalir.FlatStyle = FlatStyle.Flat;
+            btnSalir.Font = new Font("Segoe UI", 11F);
+            btnSalir.ForeColor = Color.White;
+            btnSalir.Location = new Point(397, 250);
             btnSalir.Name = "btnSalir";
-            btnSalir.Size = new Size(75, 23);
+            btnSalir.Size = new Size(94, 32);
             btnSalir.TabIndex = 13;
             btnSalir.Text = "Salir";
-            btnSalir.UseVisualStyleBackColor = true;
+            btnSalir.UseVisualStyleBackColor = false;
             btnSalir.Click += btnSalir_Click;
             // 
             // dataGridView1
@@ -188,6 +208,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.FromArgb(0, 0, 64);
             ClientSize = new Size(746, 520);
             Controls.Add(dataGridView1);
             Controls.Add(btnSalir);
@@ -204,6 +225,7 @@
             Controls.Add(cmbSeleccioneInforme);
             Controls.Add(lblSeleccioneInforme);
             Controls.Add(lblGenInformesFacturacion);
+            ForeColor = Color.White;
             Name = "frmInformes";
             Text = "Generador de Informes";
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             lblAdminUsuariosSistema = new Label();
             lblEmpleado = new Label();
             lblUsuario = new Label();
@@ -37,6 +38,8 @@
             txtContrasena = new TextBox();
             btnActualizar = new Button();
             btnSalir = new Button();
+            errorProvider1 = new ErrorProvider(components);
+            ((System.ComponentModel.ISupportInitialize)errorProvider1).BeginInit();
             SuspendLayout();
             // 
             // lblAdminUsuariosSistema
@@ -53,27 +56,36 @@
             // lblEmpleado
             // 
             lblEmpleado.AutoSize = true;
-            lblEmpleado.Location = new Point(73, 107);
+            lblEmpleado.BackColor = Color.FromArgb(0, 0, 64);
+            lblEmpleado.Font = new Font("Segoe UI", 11F);
+            lblEmpleado.ForeColor = SystemColors.ButtonFace;
+            lblEmpleado.Location = new Point(58, 104);
             lblEmpleado.Name = "lblEmpleado";
-            lblEmpleado.Size = new Size(60, 15);
+            lblEmpleado.Size = new Size(77, 20);
             lblEmpleado.TabIndex = 1;
             lblEmpleado.Text = "Empleado";
             // 
             // lblUsuario
             // 
             lblUsuario.AutoSize = true;
-            lblUsuario.Location = new Point(73, 155);
+            lblUsuario.BackColor = Color.FromArgb(0, 0, 64);
+            lblUsuario.Font = new Font("Segoe UI", 11F);
+            lblUsuario.ForeColor = SystemColors.ButtonFace;
+            lblUsuario.Location = new Point(58, 152);
             lblUsuario.Name = "lblUsuario";
-            lblUsuario.Size = new Size(47, 15);
+            lblUsuario.Size = new Size(59, 20);
             lblUsuario.TabIndex = 2;
             lblUsuario.Text = "Usuario";
             // 
             // lblContraseña
             // 
             lblContraseña.AutoSize = true;
-            lblContraseña.Location = new Point(73, 204);
+            lblContraseña.BackColor = Color.FromArgb(0, 0, 64);
+            lblContraseña.Font = new Font("Segoe UI", 11F);
+            lblContraseña.ForeColor = SystemColors.ButtonFace;
+            lblContraseña.Location = new Point(58, 201);
             lblContraseña.Name = "lblContraseña";
-            lblContraseña.Size = new Size(67, 15);
+            lblContraseña.Size = new Size(83, 20);
             lblContraseña.TabIndex = 3;
             lblContraseña.Text = "Contraseña";
             // 
@@ -101,27 +113,41 @@
             // 
             // btnActualizar
             // 
+            btnActualizar.BackColor = SystemColors.Highlight;
+            btnActualizar.FlatStyle = FlatStyle.Flat;
+            btnActualizar.Font = new Font("Segoe UI", 11F);
+            btnActualizar.ForeColor = Color.White;
             btnActualizar.Location = new Point(219, 273);
             btnActualizar.Name = "btnActualizar";
-            btnActualizar.Size = new Size(75, 23);
+            btnActualizar.Size = new Size(101, 26);
             btnActualizar.TabIndex = 7;
             btnActualizar.Text = "Actualizar";
-            btnActualizar.UseVisualStyleBackColor = true;
+            btnActualizar.UseVisualStyleBackColor = false;
+            btnActualizar.Click += btnActualizar_Click;
             // 
             // btnSalir
             // 
-            btnSalir.Location = new Point(510, 276);
+            btnSalir.BackColor = SystemColors.Highlight;
+            btnSalir.FlatStyle = FlatStyle.Flat;
+            btnSalir.Font = new Font("Segoe UI", 11F);
+            btnSalir.ForeColor = Color.White;
+            btnSalir.Location = new Point(510, 273);
             btnSalir.Name = "btnSalir";
-            btnSalir.Size = new Size(75, 23);
+            btnSalir.Size = new Size(75, 26);
             btnSalir.TabIndex = 8;
             btnSalir.Text = "Salir";
-            btnSalir.UseVisualStyleBackColor = true;
+            btnSalir.UseVisualStyleBackColor = false;
             btnSalir.Click += btnSalir_Click;
+            // 
+            // errorProvider1
+            // 
+            errorProvider1.ContainerControl = this;
             // 
             // frmAdminSeguridad
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.FromArgb(0, 0, 64);
             ClientSize = new Size(800, 339);
             Controls.Add(btnSalir);
             Controls.Add(btnActualizar);
@@ -132,8 +158,10 @@
             Controls.Add(lblUsuario);
             Controls.Add(lblEmpleado);
             Controls.Add(lblAdminUsuariosSistema);
+            Cursor = Cursors.Hand;
             Name = "frmAdminSeguridad";
             Text = "ADMINISTRACIÓN DE USUARIOS DEL SISTEMA";
+            ((System.ComponentModel.ISupportInitialize)errorProvider1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -149,5 +177,6 @@
         private TextBox txtContrasena;
         private Button btnActualizar;
         private Button btnSalir;
+        private ErrorProvider errorProvider1;
     }
 }

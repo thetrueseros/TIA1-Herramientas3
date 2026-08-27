@@ -24,5 +24,64 @@ namespace TIA1
                 this.Dispose();
             }
         }
+
+        private void btnActualizar_Click(object sender, EventArgs e)
+        {
+            //nombre vacío
+            if (string.IsNullOrEmpty(txtNombreCliente.Text))
+            {
+                errorProvider1.SetError(txtNombreCliente, "El campo de nombre de cliente es obligatorio.");
+                return;
+            }
+            else
+            {
+                errorProvider1.SetError(txtNombreCliente, "");
+            }
+
+            //documento vacío
+            if (string.IsNullOrEmpty(txtDocumento.Text))
+            {
+                errorProvider1.SetError(txtDocumento, "El campo de documento es obligatorio.");
+                return;
+
+            }
+            else
+            {
+                errorProvider1.SetError(txtDocumento, "");
+            }
+
+            //direccion vacía
+            if (string.IsNullOrEmpty(txtDireccion.Text))
+            {
+                errorProvider1.SetError(txtDireccion, "El campo de dirección es obligatorio.");
+                return;
+            }
+            else
+            {
+                errorProvider1.SetError(txtDireccion, "");
+            }
+
+            //telefono vacío
+            if (string.IsNullOrEmpty(txtTelefono.Text))
+            {
+                errorProvider1.SetError(txtTelefono, "El campo de teléfono es obligatorio.");
+                return;
+            }
+            else
+            {
+                errorProvider1.SetError(txtTelefono, "");
+            }
+
+            //email vacio
+            if (string.IsNullOrEmpty(txtEmail.Text))
+            {
+                errorProvider1.SetError(txtEmail, "El campo de email es obligatorio.");
+                return;
+            }
+            else
+            {
+                errorProvider1.SetError(txtEmail, "");
+            }
+        }
     }
 }

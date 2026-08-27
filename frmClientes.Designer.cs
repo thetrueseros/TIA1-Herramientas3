@@ -34,7 +34,7 @@
             txtNombreCliente = new TextBox();
             txtDocumento = new TextBox();
             lblDocumento = new Label();
-            textBox1 = new TextBox();
+            txtTelefono = new TextBox();
             lblTelefono = new Label();
             txtDireccion = new TextBox();
             lblDireccion = new Label();
@@ -51,6 +51,7 @@
             lblNuevoRegistroClientes.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             lblNuevoRegistroClientes.AutoSize = true;
             lblNuevoRegistroClientes.Font = new Font("Segoe UI", 25F, FontStyle.Bold);
+            lblNuevoRegistroClientes.ForeColor = Color.White;
             lblNuevoRegistroClientes.Location = new Point(62, 9);
             lblNuevoRegistroClientes.Name = "lblNuevoRegistroClientes";
             lblNuevoRegistroClientes.Size = new Size(451, 46);
@@ -61,9 +62,11 @@
             // lblNombreCliente
             // 
             lblNombreCliente.AutoSize = true;
+            lblNombreCliente.Font = new Font("Segoe UI", 11F);
+            lblNombreCliente.ForeColor = Color.White;
             lblNombreCliente.Location = new Point(80, 101);
             lblNombreCliente.Name = "lblNombreCliente";
-            lblNombreCliente.Size = new Size(91, 15);
+            lblNombreCliente.Size = new Size(114, 20);
             lblNombreCliente.TabIndex = 1;
             lblNombreCliente.Text = "Nombre Cliente";
             // 
@@ -84,25 +87,29 @@
             // lblDocumento
             // 
             lblDocumento.AutoSize = true;
+            lblDocumento.Font = new Font("Segoe UI", 11F);
+            lblDocumento.ForeColor = Color.White;
             lblDocumento.Location = new Point(80, 146);
             lblDocumento.Name = "lblDocumento";
-            lblDocumento.Size = new Size(70, 15);
+            lblDocumento.Size = new Size(87, 20);
             lblDocumento.TabIndex = 3;
             lblDocumento.Text = "Documento";
             // 
-            // textBox1
+            // txtTelefono
             // 
-            textBox1.Location = new Point(223, 234);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(253, 23);
-            textBox1.TabIndex = 8;
+            txtTelefono.Location = new Point(223, 234);
+            txtTelefono.Name = "txtTelefono";
+            txtTelefono.Size = new Size(253, 23);
+            txtTelefono.TabIndex = 8;
             // 
             // lblTelefono
             // 
             lblTelefono.AutoSize = true;
+            lblTelefono.Font = new Font("Segoe UI", 11F);
+            lblTelefono.ForeColor = Color.White;
             lblTelefono.Location = new Point(80, 237);
             lblTelefono.Name = "lblTelefono";
-            lblTelefono.Size = new Size(53, 15);
+            lblTelefono.Size = new Size(67, 20);
             lblTelefono.TabIndex = 7;
             lblTelefono.Text = "Teléfono";
             // 
@@ -116,9 +123,11 @@
             // lblDireccion
             // 
             lblDireccion.AutoSize = true;
+            lblDireccion.Font = new Font("Segoe UI", 11F);
+            lblDireccion.ForeColor = Color.White;
             lblDireccion.Location = new Point(80, 192);
             lblDireccion.Name = "lblDireccion";
-            lblDireccion.Size = new Size(57, 15);
+            lblDireccion.Size = new Size(72, 20);
             lblDireccion.TabIndex = 5;
             lblDireccion.Text = "Dirección";
             // 
@@ -131,29 +140,40 @@
             // 
             // btnSalir
             // 
-            btnSalir.Location = new Point(401, 338);
+            btnSalir.BackColor = SystemColors.Highlight;
+            btnSalir.FlatStyle = FlatStyle.Flat;
+            btnSalir.Font = new Font("Segoe UI", 11F);
+            btnSalir.ForeColor = Color.White;
+            btnSalir.Location = new Point(371, 338);
             btnSalir.Name = "btnSalir";
-            btnSalir.Size = new Size(75, 23);
+            btnSalir.Size = new Size(105, 35);
             btnSalir.TabIndex = 11;
             btnSalir.Text = "Salir";
-            btnSalir.UseVisualStyleBackColor = true;
+            btnSalir.UseVisualStyleBackColor = false;
             btnSalir.Click += btnSalir_Click;
             // 
             // btnActualizar
             // 
-            btnActualizar.Location = new Point(123, 338);
+            btnActualizar.BackColor = SystemColors.Highlight;
+            btnActualizar.FlatStyle = FlatStyle.Flat;
+            btnActualizar.Font = new Font("Segoe UI", 11F);
+            btnActualizar.ForeColor = Color.White;
+            btnActualizar.Location = new Point(93, 338);
             btnActualizar.Name = "btnActualizar";
-            btnActualizar.Size = new Size(75, 23);
+            btnActualizar.Size = new Size(105, 35);
             btnActualizar.TabIndex = 12;
             btnActualizar.Text = "Actualizar";
-            btnActualizar.UseVisualStyleBackColor = true;
+            btnActualizar.UseVisualStyleBackColor = false;
+            btnActualizar.Click += btnActualizar_Click;
             // 
             // lblEmail
             // 
             lblEmail.AutoSize = true;
+            lblEmail.Font = new Font("Segoe UI", 11F);
+            lblEmail.ForeColor = Color.White;
             lblEmail.Location = new Point(80, 284);
             lblEmail.Name = "lblEmail";
-            lblEmail.Size = new Size(36, 15);
+            lblEmail.Size = new Size(46, 20);
             lblEmail.TabIndex = 9;
             lblEmail.Text = "Email";
             // 
@@ -165,12 +185,13 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.FromArgb(0, 0, 64);
             ClientSize = new Size(562, 424);
             Controls.Add(btnActualizar);
             Controls.Add(btnSalir);
             Controls.Add(txtEmail);
             Controls.Add(lblEmail);
-            Controls.Add(textBox1);
+            Controls.Add(txtTelefono);
             Controls.Add(lblTelefono);
             Controls.Add(txtDireccion);
             Controls.Add(lblDireccion);
@@ -179,6 +200,7 @@
             Controls.Add(txtNombreCliente);
             Controls.Add(lblNombreCliente);
             Controls.Add(lblNuevoRegistroClientes);
+            ForeColor = Color.White;
             Name = "frmClientes";
             Text = "Nuevo Registro de Cliente";
             ((System.ComponentModel.ISupportInitialize)errorProvider1).EndInit();
@@ -193,7 +215,7 @@
         private TextBox txtNombreCliente;
         private TextBox txtDocumento;
         private Label lblDocumento;
-        private TextBox textBox1;
+        private TextBox txtTelefono;
         private Label lblTelefono;
         private TextBox txtDireccion;
         private Label lblDireccion;

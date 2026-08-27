@@ -24,5 +24,18 @@ namespace TIA1
                 this.Dispose();
             }
         }
+
+        private void btnActualizar_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(txtNombreCategoria.Text))
+            {
+                errorProvider1.SetError(txtNombreCategoria, "El campo de nombre de categoría es obligatorio.");
+                return;
+            }
+            else
+            {
+                errorProvider1.SetError(txtNombreCategoria, "");
+            }
+        }
     }
 }

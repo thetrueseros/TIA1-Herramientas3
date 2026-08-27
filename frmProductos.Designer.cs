@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             lblAdministracionProductos = new Label();
             lblNombreProducto = new Label();
             txtNombreProducto = new TextBox();
@@ -39,7 +40,7 @@
             lblPreciocompra = new Label();
             txtDetallesProducto = new TextBox();
             lblDetallesProducto = new Label();
-            textBox6 = new TextBox();
+            txtCantidadStock = new TextBox();
             lblCantidadStock = new Label();
             txtRutaImagen = new TextBox();
             lblRutaImagen = new Label();
@@ -47,79 +48,91 @@
             cmbCategoria = new ComboBox();
             btnActualizar = new Button();
             btnSalir = new Button();
+            errorProvider1 = new ErrorProvider(components);
+            ((System.ComponentModel.ISupportInitialize)errorProvider1).BeginInit();
             SuspendLayout();
             // 
             // lblAdministracionProductos
             // 
             lblAdministracionProductos.AutoSize = true;
-            lblAdministracionProductos.Font = new Font("Segoe UI", 20F);
-            lblAdministracionProductos.Location = new Point(219, 28);
+            lblAdministracionProductos.BackColor = Color.Transparent;
+            lblAdministracionProductos.Font = new Font("Segoe UI", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblAdministracionProductos.ForeColor = Color.White;
+            lblAdministracionProductos.Location = new Point(190, 25);
             lblAdministracionProductos.Name = "lblAdministracionProductos";
-            lblAdministracionProductos.Size = new Size(358, 37);
+            lblAdministracionProductos.Size = new Size(456, 45);
             lblAdministracionProductos.TabIndex = 0;
             lblAdministracionProductos.Text = "Administración de Productos";
             // 
             // lblNombreProducto
             // 
             lblNombreProducto.AutoSize = true;
+            lblNombreProducto.Font = new Font("Segoe UI", 11F);
+            lblNombreProducto.ForeColor = Color.White;
             lblNombreProducto.Location = new Point(93, 116);
             lblNombreProducto.Name = "lblNombreProducto";
-            lblNombreProducto.Size = new Size(103, 15);
+            lblNombreProducto.Size = new Size(128, 20);
             lblNombreProducto.TabIndex = 1;
             lblNombreProducto.Text = "Nombre Producto";
             // 
             // txtNombreProducto
             // 
-            txtNombreProducto.Location = new Point(237, 113);
+            txtNombreProducto.Location = new Point(246, 113);
             txtNombreProducto.Name = "txtNombreProducto";
-            txtNombreProducto.Size = new Size(100, 23);
+            txtNombreProducto.Size = new Size(122, 23);
             txtNombreProducto.TabIndex = 2;
             // 
             // txtCodigoReferencia
             // 
-            txtCodigoReferencia.Location = new Point(237, 163);
+            txtCodigoReferencia.Location = new Point(246, 163);
             txtCodigoReferencia.Name = "txtCodigoReferencia";
-            txtCodigoReferencia.Size = new Size(100, 23);
+            txtCodigoReferencia.Size = new Size(122, 23);
             txtCodigoReferencia.TabIndex = 4;
             // 
             // lblCodigoReferencia
             // 
             lblCodigoReferencia.AutoSize = true;
+            lblCodigoReferencia.Font = new Font("Segoe UI", 11F);
+            lblCodigoReferencia.ForeColor = Color.White;
             lblCodigoReferencia.Location = new Point(93, 166);
             lblCodigoReferencia.Name = "lblCodigoReferencia";
-            lblCodigoReferencia.Size = new Size(120, 15);
+            lblCodigoReferencia.Size = new Size(153, 20);
             lblCodigoReferencia.TabIndex = 3;
             lblCodigoReferencia.Text = "Código de Referencia";
             // 
             // txtPrecioVenta
             // 
-            txtPrecioVenta.Location = new Point(237, 261);
+            txtPrecioVenta.Location = new Point(246, 261);
             txtPrecioVenta.Name = "txtPrecioVenta";
-            txtPrecioVenta.Size = new Size(100, 23);
+            txtPrecioVenta.Size = new Size(122, 23);
             txtPrecioVenta.TabIndex = 8;
             // 
             // lblPrecioVenta
             // 
             lblPrecioVenta.AutoSize = true;
+            lblPrecioVenta.Font = new Font("Segoe UI", 11F);
+            lblPrecioVenta.ForeColor = Color.White;
             lblPrecioVenta.Location = new Point(93, 264);
             lblPrecioVenta.Name = "lblPrecioVenta";
-            lblPrecioVenta.Size = new Size(88, 15);
+            lblPrecioVenta.Size = new Size(112, 20);
             lblPrecioVenta.TabIndex = 7;
             lblPrecioVenta.Text = "Precio de Venta";
             // 
             // txtPrecioCompra
             // 
-            txtPrecioCompra.Location = new Point(237, 211);
+            txtPrecioCompra.Location = new Point(246, 211);
             txtPrecioCompra.Name = "txtPrecioCompra";
-            txtPrecioCompra.Size = new Size(100, 23);
+            txtPrecioCompra.Size = new Size(122, 23);
             txtPrecioCompra.TabIndex = 6;
             // 
             // lblPreciocompra
             // 
             lblPreciocompra.AutoSize = true;
+            lblPreciocompra.Font = new Font("Segoe UI", 11F);
+            lblPreciocompra.ForeColor = Color.White;
             lblPreciocompra.Location = new Point(93, 214);
             lblPreciocompra.Name = "lblPreciocompra";
-            lblPreciocompra.Size = new Size(102, 15);
+            lblPreciocompra.Size = new Size(128, 20);
             lblPreciocompra.TabIndex = 5;
             lblPreciocompra.Text = "Precio de Compra";
             // 
@@ -128,37 +141,41 @@
             txtDetallesProducto.Location = new Point(421, 261);
             txtDetallesProducto.Multiline = true;
             txtDetallesProducto.Name = "txtDetallesProducto";
-            txtDetallesProducto.Size = new Size(225, 50);
+            txtDetallesProducto.Size = new Size(249, 73);
             txtDetallesProducto.TabIndex = 12;
             // 
             // lblDetallesProducto
             // 
             lblDetallesProducto.AutoSize = true;
+            lblDetallesProducto.Font = new Font("Segoe UI", 11F);
+            lblDetallesProducto.ForeColor = Color.White;
             lblDetallesProducto.Location = new Point(421, 229);
             lblDetallesProducto.Name = "lblDetallesProducto";
-            lblDetallesProducto.Size = new Size(119, 15);
+            lblDetallesProducto.Size = new Size(152, 20);
             lblDetallesProducto.TabIndex = 11;
             lblDetallesProducto.Text = "Detalles del Producto";
             // 
-            // textBox6
+            // txtCantidadStock
             // 
-            textBox6.Location = new Point(237, 311);
-            textBox6.Name = "textBox6";
-            textBox6.Size = new Size(100, 23);
-            textBox6.TabIndex = 10;
+            txtCantidadStock.Location = new Point(246, 311);
+            txtCantidadStock.Name = "txtCantidadStock";
+            txtCantidadStock.Size = new Size(122, 23);
+            txtCantidadStock.TabIndex = 10;
             // 
             // lblCantidadStock
             // 
             lblCantidadStock.AutoSize = true;
+            lblCantidadStock.Font = new Font("Segoe UI", 11F);
+            lblCantidadStock.ForeColor = Color.White;
             lblCantidadStock.Location = new Point(93, 314);
             lblCantidadStock.Name = "lblCantidadStock";
-            lblCantidadStock.Size = new Size(103, 15);
+            lblCantidadStock.Size = new Size(130, 20);
             lblCantidadStock.TabIndex = 9;
             lblCantidadStock.Text = "Cantidad de Stock";
             // 
             // txtRutaImagen
             // 
-            txtRutaImagen.Location = new Point(517, 167);
+            txtRutaImagen.Location = new Point(541, 168);
             txtRutaImagen.Name = "txtRutaImagen";
             txtRutaImagen.Size = new Size(129, 23);
             txtRutaImagen.TabIndex = 16;
@@ -166,52 +183,70 @@
             // lblRutaImagen
             // 
             lblRutaImagen.AutoSize = true;
+            lblRutaImagen.Font = new Font("Segoe UI", 11F);
+            lblRutaImagen.ForeColor = Color.White;
             lblRutaImagen.Location = new Point(421, 167);
             lblRutaImagen.Name = "lblRutaImagen";
-            lblRutaImagen.Size = new Size(90, 15);
+            lblRutaImagen.Size = new Size(114, 20);
             lblRutaImagen.TabIndex = 15;
             lblRutaImagen.Text = "Ruta de Imagen";
             // 
             // lblCategoria
             // 
             lblCategoria.AutoSize = true;
+            lblCategoria.Font = new Font("Segoe UI", 11F);
+            lblCategoria.ForeColor = Color.White;
             lblCategoria.Location = new Point(421, 117);
             lblCategoria.Name = "lblCategoria";
-            lblCategoria.Size = new Size(58, 15);
+            lblCategoria.Size = new Size(74, 20);
             lblCategoria.TabIndex = 13;
             lblCategoria.Text = "Categoría";
             // 
             // cmbCategoria
             // 
             cmbCategoria.FormattingEnabled = true;
-            cmbCategoria.Location = new Point(517, 115);
+            cmbCategoria.Location = new Point(541, 116);
             cmbCategoria.Name = "cmbCategoria";
             cmbCategoria.Size = new Size(129, 23);
             cmbCategoria.TabIndex = 17;
             // 
             // btnActualizar
             // 
+            btnActualizar.BackColor = SystemColors.Highlight;
+            btnActualizar.FlatStyle = FlatStyle.Flat;
+            btnActualizar.Font = new Font("Segoe UI", 11F);
+            btnActualizar.ForeColor = Color.White;
             btnActualizar.Location = new Point(246, 370);
             btnActualizar.Name = "btnActualizar";
-            btnActualizar.Size = new Size(75, 23);
+            btnActualizar.Size = new Size(88, 34);
             btnActualizar.TabIndex = 18;
             btnActualizar.Text = "Actualizar";
-            btnActualizar.UseVisualStyleBackColor = true;
+            btnActualizar.UseVisualStyleBackColor = false;
+            btnActualizar.Click += btnActualizar_Click;
             // 
             // btnSalir
             // 
+            btnSalir.BackColor = SystemColors.Highlight;
+            btnSalir.FlatStyle = FlatStyle.Flat;
+            btnSalir.Font = new Font("Segoe UI", 11F);
+            btnSalir.ForeColor = Color.White;
             btnSalir.Location = new Point(489, 370);
             btnSalir.Name = "btnSalir";
-            btnSalir.Size = new Size(75, 23);
+            btnSalir.Size = new Size(88, 34);
             btnSalir.TabIndex = 19;
             btnSalir.Text = "Salir";
-            btnSalir.UseVisualStyleBackColor = true;
+            btnSalir.UseVisualStyleBackColor = false;
             btnSalir.Click += btnSalir_Click;
+            // 
+            // errorProvider1
+            // 
+            errorProvider1.ContainerControl = this;
             // 
             // frmProductos
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.FromArgb(0, 0, 64);
             ClientSize = new Size(800, 450);
             Controls.Add(btnSalir);
             Controls.Add(btnActualizar);
@@ -221,7 +256,7 @@
             Controls.Add(lblCategoria);
             Controls.Add(txtDetallesProducto);
             Controls.Add(lblDetallesProducto);
-            Controls.Add(textBox6);
+            Controls.Add(txtCantidadStock);
             Controls.Add(lblCantidadStock);
             Controls.Add(txtPrecioVenta);
             Controls.Add(lblPrecioVenta);
@@ -234,6 +269,7 @@
             Controls.Add(lblAdministracionProductos);
             Name = "frmProductos";
             Text = "Productos";
+            ((System.ComponentModel.ISupportInitialize)errorProvider1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -251,7 +287,7 @@
         private Label lblPreciocompra;
         private TextBox txtDetallesProducto;
         private Label lblDetallesProducto;
-        private TextBox textBox6;
+        private TextBox txtCantidadStock;
         private Label lblCantidadStock;
         private TextBox txtRutaImagen;
         private Label lblRutaImagen;
@@ -259,5 +295,6 @@
         private ComboBox cmbCategoria;
         private Button btnActualizar;
         private Button btnSalir;
+        private ErrorProvider errorProvider1;
     }
 }
