@@ -29,7 +29,7 @@ namespace TIA1
             else
             {
                 errorProvider1.SetError(txtUsuario, "");
-            } 
+            }
 
             //contraseña vacía
             if (String.IsNullOrEmpty(txtContraseña.Text))
@@ -44,6 +44,11 @@ namespace TIA1
             frmPrincipal principal = new frmPrincipal();
             principal.Show();
             this.Hide();
+        }
+
+        private void frmLogin_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

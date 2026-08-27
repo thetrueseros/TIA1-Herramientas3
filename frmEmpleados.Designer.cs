@@ -93,7 +93,6 @@
             lblDocumento.Size = new Size(70, 15);
             lblDocumento.TabIndex = 3;
             lblDocumento.Text = "Documento";
-            lblDocumento.Click += this.label2_Click;
             // 
             // txtTelefono
             // 

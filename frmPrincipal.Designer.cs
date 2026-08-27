@@ -63,6 +63,7 @@
             archivoToolStripMenuItem.Name = "archivoToolStripMenuItem";
             archivoToolStripMenuItem.Size = new Size(60, 20);
             archivoToolStripMenuItem.Text = "Archivo";
+            archivoToolStripMenuItem.Click += archivoToolStripMenuItem_Click;
             // 
             // salirToolStripMenuItem
             // 
@@ -75,7 +76,7 @@
             // 
             tablasToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { formularioClientesToolStripMenuItem, formularioProductosToolStripMenuItem, formularioCategoriasToolStripMenuItem });
             tablasToolStripMenuItem.Name = "tablasToolStripMenuItem";
-            tablasToolStripMenuItem.Size = new Size(51, 20);
+            tablasToolStripMenuItem.Size = new Size(52, 20);
             tablasToolStripMenuItem.Text = "Tablas";
             tablasToolStripMenuItem.Click += tablasToolStripMenuItem_Click;
             // 
@@ -84,18 +85,21 @@
             formularioClientesToolStripMenuItem.Name = "formularioClientesToolStripMenuItem";
             formularioClientesToolStripMenuItem.Size = new Size(130, 22);
             formularioClientesToolStripMenuItem.Text = "Clientes";
+            formularioClientesToolStripMenuItem.Click += formularioClientesToolStripMenuItem_Click;
             // 
             // formularioProductosToolStripMenuItem
             // 
             formularioProductosToolStripMenuItem.Name = "formularioProductosToolStripMenuItem";
             formularioProductosToolStripMenuItem.Size = new Size(130, 22);
             formularioProductosToolStripMenuItem.Text = "Productos";
+            formularioProductosToolStripMenuItem.Click += formularioProductosToolStripMenuItem_Click;
             // 
             // formularioCategoriasToolStripMenuItem
             // 
             formularioCategoriasToolStripMenuItem.Name = "formularioCategoriasToolStripMenuItem";
             formularioCategoriasToolStripMenuItem.Size = new Size(130, 22);
             formularioCategoriasToolStripMenuItem.Text = "Categorias";
+            formularioCategoriasToolStripMenuItem.Click += formularioCategoriasToolStripMenuItem_Click;
             // 
             // facturaciónToolStripMenuItem
             // 
@@ -109,12 +113,14 @@
             formularioFacturasToolStripMenuItem.Name = "formularioFacturasToolStripMenuItem";
             formularioFacturasToolStripMenuItem.Size = new Size(121, 22);
             formularioFacturasToolStripMenuItem.Text = "Facturas";
+            formularioFacturasToolStripMenuItem.Click += formularioFacturasToolStripMenuItem_Click;
             // 
             // formularioInformesToolStripMenuItem
             // 
             formularioInformesToolStripMenuItem.Name = "formularioInformesToolStripMenuItem";
             formularioInformesToolStripMenuItem.Size = new Size(121, 22);
             formularioInformesToolStripMenuItem.Text = "Informes";
+            formularioInformesToolStripMenuItem.Click += formularioInformesToolStripMenuItem_Click;
             // 
             // seguridadToolStripMenuItem
             // 
@@ -126,21 +132,23 @@
             // formularioEmpleadosToolStripMenuItem
             // 
             formularioEmpleadosToolStripMenuItem.Name = "formularioEmpleadosToolStripMenuItem";
-            formularioEmpleadosToolStripMenuItem.Size = new Size(132, 22);
+            formularioEmpleadosToolStripMenuItem.Size = new Size(180, 22);
             formularioEmpleadosToolStripMenuItem.Text = "Empleados";
             formularioEmpleadosToolStripMenuItem.Click += formularioEmpleadosToolStripMenuItem_Click;
             // 
             // formularioRolesToolStripMenuItem
             // 
             formularioRolesToolStripMenuItem.Name = "formularioRolesToolStripMenuItem";
-            formularioRolesToolStripMenuItem.Size = new Size(132, 22);
+            formularioRolesToolStripMenuItem.Size = new Size(180, 22);
             formularioRolesToolStripMenuItem.Text = "Roles";
+            formularioRolesToolStripMenuItem.Click += formularioRolesToolStripMenuItem_Click;
             // 
             // formularioSeguridadToolStripMenuItem
             // 
             formularioSeguridadToolStripMenuItem.Name = "formularioSeguridadToolStripMenuItem";
-            formularioSeguridadToolStripMenuItem.Size = new Size(132, 22);
+            formularioSeguridadToolStripMenuItem.Size = new Size(180, 22);
             formularioSeguridadToolStripMenuItem.Text = "Seguridad";
+            formularioSeguridadToolStripMenuItem.Click += formularioSeguridadToolStripMenuItem_Click;
             // 
             // ayudaToolStripMenuItem
             // 
@@ -152,14 +160,14 @@
             // ayudaToolStripMenuItem1
             // 
             ayudaToolStripMenuItem1.Name = "ayudaToolStripMenuItem1";
-            ayudaToolStripMenuItem1.Size = new Size(180, 22);
+            ayudaToolStripMenuItem1.Size = new Size(126, 22);
             ayudaToolStripMenuItem1.Text = "Ayuda";
             ayudaToolStripMenuItem1.Click += ayudaToolStripMenuItem1_Click;
             // 
             // acercaDeToolStripMenuItem
             // 
             acercaDeToolStripMenuItem.Name = "acercaDeToolStripMenuItem";
-            acercaDeToolStripMenuItem.Size = new Size(180, 22);
+            acercaDeToolStripMenuItem.Size = new Size(126, 22);
             acercaDeToolStripMenuItem.Text = "Acerca de";
             acercaDeToolStripMenuItem.Click += acercaDeToolStripMenuItem_Click;
             // 
