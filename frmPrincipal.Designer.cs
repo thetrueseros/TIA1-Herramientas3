@@ -45,6 +45,7 @@
             ayudaToolStripMenuItem = new ToolStripMenuItem();
             ayudaToolStripMenuItem1 = new ToolStripMenuItem();
             acercaDeToolStripMenuItem = new ToolStripMenuItem();
+            panelContenedor = new Panel();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -132,21 +133,21 @@
             // formularioEmpleadosToolStripMenuItem
             // 
             formularioEmpleadosToolStripMenuItem.Name = "formularioEmpleadosToolStripMenuItem";
-            formularioEmpleadosToolStripMenuItem.Size = new Size(180, 22);
+            formularioEmpleadosToolStripMenuItem.Size = new Size(132, 22);
             formularioEmpleadosToolStripMenuItem.Text = "Empleados";
             formularioEmpleadosToolStripMenuItem.Click += formularioEmpleadosToolStripMenuItem_Click;
             // 
             // formularioRolesToolStripMenuItem
             // 
             formularioRolesToolStripMenuItem.Name = "formularioRolesToolStripMenuItem";
-            formularioRolesToolStripMenuItem.Size = new Size(180, 22);
+            formularioRolesToolStripMenuItem.Size = new Size(132, 22);
             formularioRolesToolStripMenuItem.Text = "Roles";
             formularioRolesToolStripMenuItem.Click += formularioRolesToolStripMenuItem_Click;
             // 
             // formularioSeguridadToolStripMenuItem
             // 
             formularioSeguridadToolStripMenuItem.Name = "formularioSeguridadToolStripMenuItem";
-            formularioSeguridadToolStripMenuItem.Size = new Size(180, 22);
+            formularioSeguridadToolStripMenuItem.Size = new Size(132, 22);
             formularioSeguridadToolStripMenuItem.Text = "Seguridad";
             formularioSeguridadToolStripMenuItem.Click += formularioSeguridadToolStripMenuItem_Click;
             // 
@@ -171,11 +172,21 @@
             acercaDeToolStripMenuItem.Text = "Acerca de";
             acercaDeToolStripMenuItem.Click += acercaDeToolStripMenuItem_Click;
             // 
+            // panelContenedor
+            // 
+            panelContenedor.AutoSize = true;
+            panelContenedor.Dock = DockStyle.Fill;
+            panelContenedor.Location = new Point(0, 24);
+            panelContenedor.Name = "panelContenedor";
+            panelContenedor.Size = new Size(800, 426);
+            panelContenedor.TabIndex = 3;
+            // 
             // frmPrincipal
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(panelContenedor);
             Controls.Add(menuStrip1);
             IsMdiContainer = true;
             MainMenuStrip = menuStrip1;
@@ -208,5 +219,6 @@
         private ToolStripMenuItem formularioSeguridadToolStripMenuItem;
         private ToolStripMenuItem ayudaToolStripMenuItem1;
         private ToolStripMenuItem acercaDeToolStripMenuItem;
+        private Panel panelContenedor;
     }
 }

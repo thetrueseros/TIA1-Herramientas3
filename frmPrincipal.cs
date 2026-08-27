@@ -6,21 +6,54 @@ namespace TIA1
         {
             InitializeComponent();
         }
+        private void frmPrincipal_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            // Mostrar mensaje de confirmación
+            DialogResult resultado = MessageBox.Show("¿Seguro que deseas salir?", "Confirmar", MessageBoxButtons.YesNo);
+
+            if (resultado == DialogResult.No)
+            {
+                e.Cancel = true; // Cancela el cierre del formulario
+            }
+        }
+
+
+
+        private void AbrirFormularioEnPanel(Form formularioHijo)
+        {
+            // Si ya hay un control en el panel, se remueve
+            if (this.panelContenedor.Controls.Count > 0)
+            {
+                Form formularioAnterior = this.panelContenedor.Controls[0] as Form;
+                if (formularioAnterior != null)
+                {
+                    formularioAnterior.Close();   // Cierra el formulario
+                    formularioAnterior.Dispose(); // Libera la memoria RAM por completo
+                }
+                this.panelContenedor.Controls.Clear(); // Limpia el contenedor
+            }
+
+            formularioHijo.TopLevel = false; // El formulario deja de ser ventana independiente
+            formularioHijo.FormBorderStyle = FormBorderStyle.None; // Quita los bordes
+            formularioHijo.Dock = DockStyle.Fill; // Rellena todo el panel
+
+            this.panelContenedor.Controls.Add(formularioHijo);
+            this.panelContenedor.Tag = formularioHijo;
+            formularioHijo.Show();
+        }
 
         private void Form1_Load(object sender, EventArgs e)
         {
 
         }
-
         private void tablasToolStripMenuItem_Click(object sender, EventArgs e)
         {
         }
-
         private void formularioEmpleadosToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmEmpleados empleados = new frmEmpleados();
             empleados.MdiParent = this;
-            empleados.Show();
+            AbrirFormularioEnPanel(empleados);
         }
 
         private void salirToolStripMenuItem_Click(object sender, EventArgs e)
@@ -33,7 +66,7 @@ namespace TIA1
         {
             frmAyuda ayuda = new frmAyuda();
             ayuda.MdiParent = this;
-            ayuda.Show();
+            AbrirFormularioEnPanel(ayuda);
 
         }
 
@@ -41,7 +74,7 @@ namespace TIA1
         {
             frmAcercade acercade = new frmAcercade();
             acercade.MdiParent = this;
-            acercade.Show();
+            AbrirFormularioEnPanel(acercade);
         }
 
         private void archivoToolStripMenuItem_Click(object sender, EventArgs e)
@@ -53,49 +86,49 @@ namespace TIA1
         {
             frmClientes clientes = new frmClientes();
             clientes.MdiParent = this;
-            clientes.Show();
+            AbrirFormularioEnPanel(clientes);
         }
 
         private void formularioProductosToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmProductos productos = new frmProductos();
             productos.MdiParent = this;
-            productos.Show();
+            AbrirFormularioEnPanel(productos);
         }
 
         private void formularioCategoriasToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmCategoriaProductos categorias = new frmCategoriaProductos();
             categorias.MdiParent = this;
-            categorias.Show();
+            AbrirFormularioEnPanel(categorias);
         }
 
         private void formularioFacturasToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmFacturas facturas = new frmFacturas();
             facturas.MdiParent = this;
-            facturas.Show();
+            AbrirFormularioEnPanel(facturas);
         }
 
         private void formularioInformesToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmInformes informes = new frmInformes();
             informes.MdiParent = this;
-            informes.Show();
+            AbrirFormularioEnPanel(informes);
         }
 
         private void formularioRolesToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmRolEmpleados roles = new frmRolEmpleados();
             roles.MdiParent = this;
-            roles.Show();
+            AbrirFormularioEnPanel(roles);
         }
 
         private void formularioSeguridadToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmAdminSeguridad seguridad = new frmAdminSeguridad();
             seguridad.MdiParent = this;
-            seguridad.Show();
+            AbrirFormularioEnPanel(seguridad);
         }
     }
 }
